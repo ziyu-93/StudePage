@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉菜单</title>
+    <style>
+        *{
+            padding:0;
+            margin:0
+        }
+        li{
+            list-style: none;
+        }
+        .item-wrap{width: 200px;margin: 50px auto;position: relative}
+        h3{ height: 40px; line-height: 40px; padding: 0 10px;border:1px solid #ccc }
+        h3:after {content:""; position: absolute;right:10px;top:17px;width:0;height: 0;
+            border:10px solid transparent;border-top-color:#999 ; transition:.5s}
+        /*.select{transform-origin:50% 25%;transform:rotate(180deg)}*/
+        .select-show{position: absolute;left:0;top:42px;width: 100%;border: 1px solid #ccc;box-sizing: border-box}
+        .select-show li{list-style: none;border-bottom: 1px solid #ccc; line-height: 30px;
+            padding:0 10px;cursor:pointer}
+        .select-show li:hover{background-color: #2aabd2}
+    </style>
+</head>
+<body>
+<script src="day02work1.js" type="text/babel"></script>
+</body>
+<script src="../../build/react.min.js"></script>
+<script src="../../build/react-dom.min.js"></script>
+<script src="../../build/browser.min.js"></script>
+</html>

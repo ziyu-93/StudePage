@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>无关组件通过第三方链接</title>
+</head>
+<body>
+
+</body>
+<script>
+    //严格模式
+    "use strtic"
+    var C={};//中间对象
+    //通过中间对象的，这个概念，从而引出React的无关组件连接
+    (function () {
+      var A = {
+          num : 1,
+          name : "我是A"
+      }
+        C.changeNum = function (num) {
+            this.num = num;
+            console.log(this);
+        }.bind(A);
+    }());
+
+    (function () {
+      var B = {}
+        C.changeNum(20)
+    }());
+</script>
+</html>

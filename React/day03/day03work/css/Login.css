@@ -1,0 +1,78 @@
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+body,html{
+    overflow: hidden;
+    height:100%;
+}
+.page,.content,.header,.footer{
+    position: absolute;
+    width: 100%;
+    top:0;
+    left:0;
+}
+.header{
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    display: flex;
+    border-bottom: 1px solid royalblue;
+}
+.page{ bottom: 0;overflow: hidden}
+.header-btn{ width: 60px}
+.header-tit{ flex: 1}
+.content{
+    top:50px;
+    bottom:50px;
+}
+.footer{
+    bottom:0;
+    height:50px;
+    line-height: 50px;
+    border-top: 1px solid royalblue;
+    top:auto;
+}
+.footer li{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.login-page{
+    padding:20px;
+}
+.login-page li{
+    margin-bottom: 10px;
+}
+.input-bar{
+    height:40px;
+    width: 100%;
+    padding: 0 10px;
+}
+.go-forget{
+    padding-left: 10px;
+}
+.login-in,.go-reg{
+    width: 100%;
+    display: block;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    background: -moz-linear-gradient(top,  #000000 0%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#ffffff));
+    background: -webkit-linear-gradient(top,  #000000 0%,#ffffff 100%);
+    background: -o-linear-gradient(top,  #000000 0%,#ffffff 100%);
+    background: -ms-linear-gradient(top,  #000000 0%,#ffffff 100%);
+    background: linear-gradient(to bottom,  #1f7e9a 0%,skyblue 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff',GradientType=0 );
+    border-radius: 6px;
+}
+.check{
+    margin-right: 10px;
+}
